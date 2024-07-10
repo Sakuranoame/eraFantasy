@@ -1,0 +1,22 @@
+@INDEX(ARGS)
+    #FUNCTION
+    #DIM INDEX
+    SELECTCASE ARGS
+        CASE "互动"
+            INDEX = 0
+        CASE "交互"
+            INDEX = 1
+        CASE "查看"
+            INDEX = 2
+        CASE "能力"
+            INDEX = 3
+        CASE "移动"
+            INDEX = 4
+        CASE "系统"
+            INDEX = 5
+        CASE "对话"
+            INDEX = 0
+        CASEELSE
+            INDEX = -1
+    ENDSELECT
+    RETURNF INDEX

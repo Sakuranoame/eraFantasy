@@ -1,0 +1,33 @@
+;-----------------------
+;UI相关
+;-----------------------
+;UI界面
+#DIM UI_MODE
+#DIM DEBUG = 0
+#DIM CONST GAL = 1
+#DIM CONST SEX = 2
+;GAL按钮选择
+#DIM GAL按钮类别选择
+#DIM CONST 互动 = 0
+#DIM CONST 交互 = 1
+#DIM CONST 查看 = 2
+#DIM CONST 能力 = 3
+#DIM CONST 移动 = 4
+#DIM CONST 系统 = 5
+
+;互动按钮
+#DIM GAL按钮选择
+#DIM CONST 对话 = 0
+#DIM CONST 抱抱 = 1
+
+
+;显示行数
+#DIM CONST UI_LINE_MAX = 1001
+#DIM CONST UI_BUTTON_LINE_MAX = 10
+
+#DIMS UI_LINE, UI_LINE_MAX
+#DIMS UI_BUTTON, UI_BUTTON_LINE_MAX
+#DIMS UI_GAL_BUTTON, 10
+#DIMS UI_GAL_BUTTON_GROUP, 6 = "互动", "交互", "查看", "能力", "移动", "系统"
+
+;-----------------------

@@ -1,0 +1,10 @@
+@INPUT_GAL
+    GAL按钮选择 = RESULT
+    SELECTCASE GAL按钮类别选择
+        CASE INDEX("互动")
+            SELECTCASE GAL按钮选择 - 10
+                CASE INDEX("对话")
+                    CALL UI_LINE_PUSH("Test")
+                    PRINTL yes
+            ENDSELECT
+    ENDSELECT
